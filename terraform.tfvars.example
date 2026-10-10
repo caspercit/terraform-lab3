@@ -1,0 +1,16 @@
+# Copia este archivo a terraform.tfvars y usa tu propia suscripcion
+subscription_id       = "PEGA-AQUI-TU-SUBSCRIPTION-ID"
+project_name          = "integradora"
+environment           = "qa"
+location              = "mexicocentral"
+instance              = "001"
+# Debe ser UNICO globalmente para *.azurewebsites.net
+web_app_name          = "app-utvt-integr-qa-tuusuario-001"
+service_plan_sku_name = "F1"
+node_version          = "24-lts"
+log_analytics_sku     = "PerGB2018"
+application_type      = "web"
+tags = {
+  owner       = "estudiante"
+  cost_center = "utvt"
+}
